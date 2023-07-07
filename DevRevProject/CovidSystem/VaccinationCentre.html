@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: white;
+		}
+
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial;
+		  font-size: 17px;
+		}
+
+		.container {
+		  position: relative;
+		  max-width: 1700px;
+		  margin: 0 auto;
+		}
+
+		.container img {vertical-align: middle;}
+
+		.container .content {
+		  position: absolute;
+		  bottom: 0;
+		  background: rgb(0, 0, 0);
+		  background: rgba(0, 0, 0, 0.5);
+		  color: #f1f1f1;
+		  width: 100%;
+		  padding: 5px;
+		}
+		* {box-sizing: border-box;}
+
+
+	</style>
+</head>
+<body>
+	<div class="w3-bar w3-black">
+	<a href="./form.html" class="w3-bar-item w3-hover-blue">Login</a>
+	<a href="./signup.html" class="w3-bar-item w3-hover-blue">Sign up</a>
+	<a href="./form.html" class="w3-bar-item w3-hover-blue">Admin</a>
+	</div>
+	<h1 align="center">VACCINATION CENTRES</h1>
+
+
+	<div class="container">
+		<img src="vaccinebg1.png" alt="vaccinebg1" style="width:100%;">
+
+		<div class="content">
+    		<h1>Available centres: </h1>
+    		<label for="centre">Choose a centre:</label>
+  <select name="centre" id="centre">
+  	    <option value="select"></option>
+    <option value="Anna nagar">Anna nagar, Chennai</option>
+    <option value="K K Nagar">K K Nagar, Chennai</option>
+    <option value="Vandaloor">Vandaloor, Chennai</option>
+    <option value="Ambattur">Ambattur, Chennai</option>
+  </select>
+
+			
+		</div>
+	</div>
+</body>
+</html>

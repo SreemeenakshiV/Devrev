@@ -1,0 +1,53 @@
+<html>
+<style>
+body{
+ font-family: 'Averia Serif Libre';
+
+ margin: auto;
+ margin-top: 57vh;
+ width: 320px; height: 30px;
+ background-image: url('flightbg3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+ }
+ input{ border: 1px solid; }
+ td:first-child{ width: 100px; }
+ table{
+border-style: solid;
+ border-width: 2px;
+ border-color: black ;
+ padding: 10px;
+}
+
+ </style>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script type="text/javascript">
+function validate(){
+var username=document.getElementById("name").value;
+var messagetext="Hello " + username + "!";
+swal({
+ text: messagetext,
+
+ button: "OK",
+
+}).then(function(){
+window.location="file:///C:/Users/raama/Desktop/coding/expf2.html";
+});
+}
+</script>
+<body>
+<fieldset>
+<legend>Sign Up</legend>
+<form method="post"><table>
+<tr><td><label>Email :</label></td><td><input type="Email" id="name" /></td><br></tr>
+<tr><td><label>Password :</label></td><td><input type="password" name="password"
+></td></tr>
+<tr><td><label>Confirm Password :</label></td><td><input type="password" name="confirmpassword"
+></td></tr>
+<tr><td><button type="button" id="submit" value="Register"
+onclick="validate()" >Register</button></td></tr></table>
+</form>
+</fieldset>
+</body>
+</html>
